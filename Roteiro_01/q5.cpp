@@ -2,7 +2,6 @@
 
 int contFib(int n, int k);
 int contador = 0;
-//void contFib(int* cont);
 
 int main() {
 
