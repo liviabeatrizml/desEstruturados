@@ -32,4 +32,5 @@ int main () {
     imprimir(vet, 10); // vetor e tamanho, imprimido após a inversão
 
     return 0;
+ 
 }
