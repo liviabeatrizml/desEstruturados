@@ -28,7 +28,7 @@ int main() {
 }
 
 int contFib(int n, int k) {
-  int i, fibonacci = 0;
+  int fibonacci = 0;
 
   if(n == k) {
     contador = contador + 1;
