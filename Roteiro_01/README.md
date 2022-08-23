@@ -191,5 +191,6 @@ Na main, antes de iniciar o código, definimos todas variáveis que serão usada
 Com a matriz alocada, definimos os valores de cada posição na matriz, com o intuito de criar um “terreno” por onde X irá se mover até o ponto final, quando _mat[i][j] = 1_ significa que ali é uma parede e quando igual a 0, significa que é um caminho livre para o ponto X se movimentar.
 **IMAGEM**
 Com a matriz criada com seus devidos valores, pedimos ao usuário para dá os valores do ponto de saída do X (_linInicio_ e _colInicio_) e de chegada Y (_linChegada_ e _colChegada_) que servirão como parâmetro da função _movimentar()_ o ponto X.
+
 **IMAGEM**
 O último passo é chamar a função _movimentar()_ que guiará o ponto X até o ponto Y por meio de recursão. No final, após chegar ao ponto de destino é feito o esvaziamento da matriz por meio da função _limpaMatriz();_
