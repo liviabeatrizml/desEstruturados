@@ -32,20 +32,16 @@ Desenvolvimentos explicativo das questões:</br>
 
 Temos de inicio a adição da biblioteca <time.h> que irá disponibilizar as funções de tempo como por exemplo o clock() e por fim inicializamos a função de algoritmoDemorado(int n).
 
-**IMAGEM**
-### main
+![Questão 01](components/q1_00.png)
+
+### int main()
 Na função principal começamos criando as variáveis que irá auxiliar no desenvolvimento do código, coloquei o valor de soma como 0 e a variável "x" que irá fazer a soma como parâmetro da função de algoritmoDemorado tem o valor de 100. 
-**IMAGEM**
+
+![Questão 01](components/q1_01.png)
+
 Após isso criamos um for para fazer a média do tempo, dando o start com a variável t1, em seguida é chamado a função algoritmoDemorado já com o parâmetro sendo x, assim entramos na função.
-**IMAGEM**
 
-### int algoritmoDemorado(int n)
-A função do algoritmoDemorado nada mais é do que um somatório de quarto variáveis em quatro for, onde terá os iteradores que realizar a soma enquanto essas variáveis forem menor do que "n"(variável x) e por fim irá ser feito uma soma de todas essas variáveis retornando assim o seu resultado.
-
-**IMAGEM**
-Voltando para a função main teremos a variável t1 finalizando o tempo de execução do algoritmo e já guardando o seu tempo final, após essa declaração é feita a soma de todos os tempos.
-Para apresentar o tempo na qual o algoritmo precisou para executar o código foi feito a seguinte operação ((float)soma)/x)/CLOCKS_PER_SEC), essa função tem como objetivo fazer a media do tempo e colocar em segundos finalizando assim o código.
-**IMAGEM**
+![Questão 01](components/q1_02.png)
 
 ## Questão 02
 Função que gera os números aleatórios para o cálculo da média
