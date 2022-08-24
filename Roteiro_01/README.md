@@ -103,6 +103,8 @@ A seguir definimos os dois casos bases da nossa recursão, sendo um deles onde o
 
 Caso nenhum desses dois casos ocorra, é feita a chamada da função novamente, analisando os próximos caracteres.
 
+![Questão 03](components/q3_06.png)
+
 ## Questão 04
 ### int main()
 Na main temos o corpo da questão, desde a criação das variáveis 
@@ -122,11 +124,10 @@ Primeiramente, definimos os casos bases que a função deve possuir no intuito d
  - **k > n** retorna 0 (linha 14 e 15), pois de acordos com as regras é impossível calcular o número binomial nessa circunstância;
  - **k == 0 || k == n** retorna 1 (linha 16 e 17), esse seria o principal caso base, pois quando o valor de k for igual a 0, então o binomial dele será 1.
  
-![Questão 04](components/q4_03.png)
- 
  Por fim, temos a própria chamada recursiva, que no fim irá retornar o valor do número binomial corretamente.
+
+ ![Questão 04](components/q4_03.png)
  
-![Questão 04](components/q4_04.png)
 
 ## Questão 05
 
@@ -185,27 +186,25 @@ A função consiste somente em um 2 for’s encadeado e delimitado pelo número 
 
 Mas, caso o número de lin e col for igual a i e j, respectivamente, sendo lin e col definidas pelo usuário e passada para função, marca um X ao invés do seu elemento, mostrando em que lugar que o indicador (quadrado colorido) está.
 
-![Questão Desafio 01](components/qd1_04.png)
-
 ### void limpaMatriz()
 Função do tipo void que recebe como parâmetro a matriz (mat, um ponteiro de ponteiro) e número de linhas (int) que serve para auxiliar até onde se deve limpar.
 Ela é composta somente por um _for_ que irá percorrer todos os ponteiros presentes na _mat_ e limpa-los (_free_), limpando assim tudo o que tinha dentro deles. Por fim, é limpado todos os ponteiros presentem na _mat_.
 
-![Questão Desafio 01](components/qd1_05.png)
+![Questão Desafio 01](components/qd1_04.png)
 
 ### int calculaArea()
 Função recursiva do tipo inteiro que recebe como parâmetro um matriz _(**mat_), o ponto (_linInciale_  _colIncial_) inicial definidas pelo usuário e a localização do quadrado (_linhaAtual_ e _colunaAtual_).
 Antes de iniciar, para a construção do código, consideramos que o usuário sempre irá definir os pontos iniciais como umas das 4 extremidades.
 
-![Questão Desafio 01](components/qd1_06.png)
+![Questão Desafio 01](components/qd1_05.png)
 
 Inicialmente definimos se o decréscimo ou acréscimo na _linhaAtual_ ou na _colunaAtual_ for menor que 0 ou maior que 5 como caso base da recursão e assim encerrado a recursão
 
-![Questão Desafio 01](components/qd1_07.png)
+![Questão Desafio 01](components/qd1_06.png)
 
 Após isso, utilizamos alguns _if’s_ para localizamos o ponto inicial, sendo ele uma das extremidades determinadas pelo usuário e determinar a ordem de contagem dos quadrados em cada ponto
 
-![Questão Desafio 01](components/qd1_08.png)
+![Questão Desafio 01](components/qd1_07.png)
 
 Dentro de cada _if_, verifica-se duas situações: se o elemento _mat[linhaAtual][colunaAtual]_ for igual 1 ou igual a 0.
 
@@ -213,26 +212,36 @@ Igual a **1**: Significa que o elemento não deve ser contabilizado e que todos 
 
 Igual a **0**: Significa que está posição deve ser considerado e somado com o total até o momento, além disso, é feita a impressão da matriz mostrando a posição atual. Após isso, é feita um acréscimo de 1 no valor da coluna
 
-![Questão Desafio 01](components/qd1_09.png)
+![Questão Desafio 01](components/qd1_08.png)
 
 Difere somente o acréscimo ou decréscimo relacionado com ordem da soma da área.
+
+![Questão Desafio 01](components/qd1_09.png)
+
 ### int main()
 Nela, declaramos primeiro as variáveis que iremos utilizar para auxiliar na chamada das funções.
-Depois, com auxílio do printf, pedimos ao usuário para definir o tamanho da matriz (L x C) que iremos utilizar para contar os quadrados brancos. Seguindo, alocamos a matriz através da função _alocaMatriz()_.
 
 ![Questão Desafio 01](components/qd1_10.png)
 
-Por meio de dois _for’s_ encadeado, é determinado como 0 (quadrado branco) todos os pontos da matriz, mas em alguns pontos tais valores devem ser 1 (quadrado preto).
+Depois, com auxílio do printf, pedimos ao usuário para definir o tamanho da matriz (L x C) que iremos utilizar para contar os quadrados brancos. 
 
 ![Questão Desafio 01](components/qd1_11.png)
 
-Com os valores da matriz já definidos, pedimos ao usuário para definir os pontos iniciais para assim poder calcular os quadrados brancos divididos pelo preto. Para fins de melhor visualização, chamamos a função _mostraMatriz()_;
+Seguindo, alocamos a matriz através da função _alocaMatriz()_.
 
 ![Questão Desafio 01](components/qd1_12.png)
 
-Agora definimos que a variável _área_ irá receber o valor retornado da função _calculaArea_. E finalmente, mostramos o valor de quadrados brancos (0) presentes no QUADRADO (matriz) por meio de um _printf_.
+Por meio de dois _for’s_ encadeado, é determinado como 0 (quadrado branco) todos os pontos da matriz, mas em alguns pontos tais valores devem ser 1 (quadrado preto).
 
 ![Questão Desafio 01](components/qd1_13.png)
+
+Com os valores da matriz já definidos, pedimos ao usuário para definir os pontos iniciais para assim poder calcular os quadrados brancos divididos pelo preto. Para fins de melhor visualização, chamamos a função _mostraMatriz()_;
+
+![Questão Desafio 01](components/qd1_14.png)
+
+Agora definimos que a variável _área_ irá receber o valor retornado da função _calculaArea_. E finalmente, mostramos o valor de quadrados brancos (0) presentes no QUADRADO (matriz) por meio de um _printf_.
+
+![Questão Desafio 01](components/qd1_15.png)
 
 O ultimo passo presente na main é a limpeza dos dados da matriz, ou seja esvaziar e limpar a memória alocada para a mesmo por meio da função _limpaMatriz()_;
 
@@ -270,3 +279,5 @@ Com a matriz criada com seus devidos valores, pedimos ao usuário para dá os va
 ![Questão Desafio 02](components/qd2_06.png)
 
 O último passo é chamar a função _movimentar()_ que guiará o ponto X até o ponto Y por meio de recursão. No final, após chegar ao ponto de destino é feito o esvaziamento da matriz por meio da função _limpaMatriz();_
+
+![Questão Desafio 02](components/qd2_07.png)
