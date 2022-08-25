@@ -47,11 +47,11 @@ int main()
     float *res = gerador(n);
     float *vet = gerador(n);
 
-    // for (size_t i = 0; i < n; i++)
-    // {
-    //     printf("res [% lu ]=% f\n", i, res[i]);
-    //     // printf("vet [% lu ]=% f\n", i, vet[i]);
-    // }
+    for (size_t i = 0; i < n; i++)
+    {
+        printf("res [% lu ]=% f\n", i, res[i]);
+        // printf("vet [% lu ]=% f\n", i, vet[i]);
+    }
 
     printf("Media interativa = %.2f\n", (mediaI(vet, n)));
     printf("Media recursiva = %.2f\n", (mediaR(res, n)));
