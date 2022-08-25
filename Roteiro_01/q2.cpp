@@ -42,17 +42,17 @@ float mediaI(float *vet, int tam)
 
 int main()
 {
-    printf(" Sequencia ␣ aleatoria \n");
+    printf(" Sequencia aleatoria \n");
     size_t n = 1000; // 10³, 10⁶, 10⁹
     float *res = gerador(n);
     float *vet = gerador(n);
 
-    for (size_t i = 0; i < n; i++)
-    {
-        printf("res [% lu ]=% f\n", i, res[i]);
-        // printf("vet [% lu ]=% f\n", i, vet[i]);
-    }
+    // for (size_t i = 0; i < n; i++)
+    // {
+    //     printf("res [% lu ]=% f\n", i, res[i]);
+    //     // printf("vet [% lu ]=% f\n", i, vet[i]);
+    // }
 
-    printf("Média interativa = %.2f\n", (mediaI(vet, n)));
-    printf("Média recursiva = %.2f\n", (mediaR(res, n)));
+    printf("Media interativa = %.2f\n", (mediaI(vet, n)));
+    printf("Media recursiva = %.2f\n", (mediaR(res, n)));
 }
