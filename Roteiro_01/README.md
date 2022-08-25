@@ -14,11 +14,11 @@ Código fonte dos desafios:
 |--|--|
 
 Desenvolvimentos explicativo das questões:</br>
-[q1.cpp](#Questão-01) | [q6.cpp](#Questão-06) </br>
-[q2.cpp](#Questão-02) | [q7.cpp](#Questão-07)</br>
-[q3.cpp](#Questão-03) | [q8.cpp](#Questão-08)</br>
-[q4.cpp](#Questão-04) | [qd1.cpp](#Questão-Desafio-01)</br>
-[q5.cpp](#Questão-05) | [qd2.cpp](#Questão-Desafio-02)</br>
+| [q1.cpp](#Questão-01) | [q2.cpp](#Questão-02) | [q3.cpp](#Questão-03) | [q4.cpp](#Questão-04) | [q5.cpp](#Questão-05)
+|--|--|--|--|--|
+
+| [q6.cpp](#Questão-06) | [q7.cpp](#Questão-07) | [q8.cpp](#Questão-08) | [qd1.cpp](#Questão-Desafio-01) | [qd2.cpp](#Questão-Desafio-02)
+|--|--|--|--|--|
 
 ## :computer: Desenvolvimento e explicação dos códigos: 
 ## Questão 01
