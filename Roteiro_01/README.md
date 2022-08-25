@@ -195,7 +195,7 @@ Na função “raizQuadrada” é atribuído três parâmetros responsáveis por
 ![Questão 07](components/q7_01.png)
  
 Se o valor da “raiz” elevado ao quadrado, subtraído do número que se quer extrair a raiz quadrada, multiplicado por “x” (diferença da multiplicação entre raízes do número a ser descoberto), for menor que a margem de erro, será retornado o valor aproximado da raiz quadrada: ((raiz * raiz) - num) * (x)) <= margem) Essa condição gera o valor final da raiz após a chamada recursiva da função “raizQuadrada”. Nesse sentido, a variável “margem” é a referência para o fim da função, uma vez que assume um valor mínimo como erro admissível para resultados de raízes não exatas.
-O retorno da “raizQuadrada” será dado pela expressão exposta na questão, que diz respeito à função de extrair a raiz quadrada de um determinado número. Tal expressão é dada pela multiplicação entre aproximação de raízes somado ao número que se quer retirar a raiz quadrada sobre duas vezes o valor da aproximação. Esse último retorno ocorrerá recursivas vezes enquanto não for descoberto o valor da raiz
+O retorno da “raizQuadrada” será dado pela expressão exposta na questão, que diz respeito à função de extrair a raiz quadrada de um determinado número. Tal expressão é dada pela multiplicação entre aproximação de raízes somado ao número que se quer retirar a raiz quadrada sobre duas vezes o valor da aproximação. Esse último retorno ocorrerá recursivas vezes enquanto não for descoberto o valor da raiz.
 
 ![Questão 07](components/q7_02.png)
 
