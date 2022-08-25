@@ -48,16 +48,33 @@ Para apresentar o tempo na qual o algoritmo precisou para executar o código foi
 ![Questão 01](components/q1_04.png)
 
 ## Questão 02
-Função que gera os números aleatórios para o cálculo da média
+
+ - Alternativa a) Cálculo iterativo e recursivo da média;
+ - Alternativa b) Testar com as seguintes quantidades de sequências aleatórias: 
+ - [x] 10³ ou 10^3
+  
+  ![Questão 02](components/q2_b1.png)
+  
+ - [x] 10⁶ ou 10^6 (apenas Média Iterativa)
+
+ ![Questão 02](components/q2_b2.png)
+ 
+ - [ ] 10⁹ ou 10^9
+
+ ![Questão 02](components/q2_b3.png)
+
+- Alternativa c) **Média Iterativa:** Complexidade "O(n)". Pois quanto maior o tamanho (quantidade de elementos) maior o tempo de execução. **Média Recursiva:** Complexidade "N log(N)". 
+
+Função que gera os números aleatórios para o cálculo da média.
 
 ![Questão 02](components/q2_00.png)
 
 ### int main()
-Na função “main” a variável “n” recebe o tamanho dos elementos a serem calculados na média, ou seja, a quantidade de números a serem somados
+Na função “main” a variável “n” recebe o tamanho dos elementos a serem calculados na média, ou seja, a quantidade de números a serem somados.
 
 ![Questão 02](components/q2_01.png)
 
-O ponteiro do tipo float “res”, aponta para a função responsável por gerar os “n” valores aleatórios
+O ponteiro do tipo float “res”, aponta para a função responsável por gerar os “n” valores aleatórios para o cálculo da média usando função recursiva. De maneira análoga, o ponteiro “vet” recebe os valores aleatórios para o cálculo da média iterativa.
 
 ![Questão 02](components/q2_02.png)
 
@@ -65,12 +82,25 @@ O laço “for” fica responsável por contabilizar todos os “n” elementos 
 
 ![Questão 02](components/q2_03.png)
 
-Logo após, entra-se na função responsável pelo cálculo da média propriamente dita
-
-### float media(float *res, int tam)
-Função “media” recebe como parâmetros o tamanho (quantidade) de elementos e o ponteiro “res” que aponta para os respectivos valores armazenados. Nas condicionais, se porventura o tamanho seja igual a 1, ou seja, caso esteja calculando a média de apenas um número, o retorno será o próprio valor, ocupado pela posição 0 no vetor denominado “res”. Caso contrário, isto é, se a média for feita com mais de um elemento, o retorno da função recursiva será a expressão dada pela questão, que diz respeito ao cálculo da média de todos os valores sobre a quantidade de valores existentes.
+Logo após, entra-se na função responsável pelo cálculo das médias iterativas e recursivas propriamente ditas
 
 ![Questão 02](components/q2_04.png)
+
+Ambas as funções “mediaI” e “mediaR” recebem como parâmetros o tamanho (quantidade) de elementos e o ponteiro “res” e “vet”, respectivamente, que aponta para os respectivos valores armazenados.
+
+### float mediaR(float *res, int tam)
+
+Na função recursiva (mediaR), as condicionais informam que se porventura o tamanho for igual a 1, ou seja, caso esteja calculando a média de apenas um número, o retorno será o próprio valor, ocupado pela posição 0 no referente vetor.
+
+Caso contrário, isto é, se a média for feita com mais de um elemento, o retorno da função recursiva será a expressão dada pela questão, que diz respeito ao cálculo da média de todos os valores sobre a quantidade de valores existentes.
+
+![Questão 02](components/q2_05.png)
+
+## float mediaI(float *vet, int tam)
+
+Já no caso da média iterativa, existirá uma variável “soma” para alocar a soma dos números que se quer obter a média. Enquanto a variável de incremento “i” for menor que o tamanho (quantidade de elementos) a “soma” contabilizará os valores. Por fim, a função retorna o resultado da soma pelo tamanho de elementos, ou seja, a solução da média.
+
+![Questão 02](components/q2_06.png)
 
 ## Questão 03
 Antes de tudo, definimos as bibliotecas que iremos usar no código, como _stdio.h_ e _stdlib.h_ que usamos normalmente em tudo código e _string.h_ que nos ajudará a mexer e trabalhar com tipo _char_ e _string_. Além disso, definimos também a função que irá resolver nosso problema em questão.
