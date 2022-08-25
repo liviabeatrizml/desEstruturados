@@ -201,14 +201,18 @@ O retorno da “raizQuadrada” será dado pela expressão exposta na questão, 
 
 ## Questão 08
 > **:warning:** Questão depurada em vídeo com acesso apenas para o professor via drive **:warning:**
-### int fatorialComCalda
-> Fatorial com calda
+### int fatorialComCauda
+> Fatorial com cauda
+
+https://drive.google.com/file/d/1ByhdRJHscOE91TEwR7OwUqI05BAHZozS/view?usp=sharing
 
 **:warning:** Acesso liberado apenas para o professor
 
 
-### int fatorialSemCalda( )
-> Fatorial sem calda
+### int fatorialSemCauda( )
+> Fatorial sem cauda
+
+https://drive.google.com/file/d/1f-kCXT_mLOh6HtwEBMbgRdhZ6UT-FM55/view?usp=sharing
 
 **:warning:** Acesso liberado apenas para o professor
 
