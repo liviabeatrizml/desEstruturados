@@ -130,8 +130,60 @@ Primeiramente, definimos os casos bases que a função deve possuir no intuito d
  
 
 ## Questão 05
+Em primeira instância o código solicita ao usuário duas informações, sendo elas, uma posição do Fibonacci (int n) e um valor/número (int k) que seja menor/igual a int n. Com isso, foi utilizado a estrutura "do while" para que, enquanto for digitado um valor int k maior que o int n, o programa ficará pedindo ao usuário um valor que seja '<=' que int n.
+
+![Questão 05](components/q5_00.png)
+
+Após ser informado os dados acima, vai ser calculado quantas vezes o int k se repete dentro de uma função recursiva (int contFib (int n, int k)).
+
+![Questão 05](components/q5_01.png)
+
+No escopo do código foi adicionada uma variável global que será usada dentro do contador da função.
+Quando o valor do int n for igual ao int k, de forma recursiva a função vai comparar as duas variáveis e incrementar +1 para todo caso verdadeiro. 
+
+![Questão 05](components/q5_02.png)
+
+Dessa forma, ao fazer todo o processamento do código, no final será retornado a quantidade de repetições que o int k terá dentro da função recursiva int n.
+
+![Questão 05](components/q5_03.png)
 
 ## Questão 06
+### void imprimir() 
+Uma função recursiva do tipo void que recebe como parâmetro um vetor de inteiro e um inteiro (tamanho do vetor). Tal função tem o intuito de imprimir os números presentes no vetor. Inicialmente definimos o caso base da função recursiva, e dentro dele colocamos um printf que irá mostrar o primeiro elemento do vetor.
+
+![Questão 06](components/q6_00.png)
+
+Caso não cumpra com o caso base logo de início, é chamada novamente a função imprimir(), mas decrementando em 1 o tamanho. Quando o caso base é acessado, as recursões vão sendo resolvidas e com isso, também é feita a impressão a cada realização.
+
+![Questão 06](components/q6_01.png)
+
+### void inverter()
+A função recursiva inverter tem como tipo void e recebe como parâmetro um vetor de inteiro que será invertido, um índice inicial (i) do vetor e o índice final (f) do vetor, que servirão para inverter os elementos a cada passo. 
+Antes de iniciar, definimos uma variável auxiliar (aux) que irá nos ajudar a inverter os elementos a cada chamada.
+
+![Questão 06](components/q6_02.png)
+
+Com a variável criada, criamos um if com a condição presente no if é a de se o índice inicial (i) for menor que índice final (f), onde ela irá determinar se ainda falta inverter algum elemento ou não. Caso a condição for obedecida:
+ - A variável aux recebe o valor do elemento i; 
+ - O valor do elemento i irá receber o valor do elemento f; 
+ - O valor do elemento f irá receber o valor de aux;
+
+![Questão 06](components/q6_03.png)
+
+Por fim é chamada novamente a função inverter(), mas incrementando em 1 o índice i e decrementando o índice f em -1.
+
+![Questão 06](components/q6_04.png)
+
+Caso a condição não seja seguida, a função é encerrada, o que significa que o vetor está invertido ou não é possível
+
+### int main()
+Na main, primeiro definimos o vetor de números que iremos inverter com a nossa função criada e imprimimos com a função imprimir() ela para conferir como esta, e após comparar com a invertida.
+
+![Questão 06](components/q6_05.png)
+
+Após isso, chamamos a função inverter() para realizar o processo de inversão do vetor e imprimimos logo adiando para compararmos com o vetor anteriormente criado.
+
+![Questão 06](components/q6_06.png)
  
 ## Questão 07
 ### int main()
