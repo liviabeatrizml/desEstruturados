@@ -168,22 +168,20 @@ Com a variável criada, criamos um if com a condição presente no if é a de se
  - O valor do elemento i irá receber o valor do elemento f; 
  - O valor do elemento f irá receber o valor de aux;
 
-![Questão 06](components/q6_03.png)
-
 Por fim é chamada novamente a função inverter(), mas incrementando em 1 o índice i e decrementando o índice f em -1.
 
-![Questão 06](components/q6_04.png)
+![Questão 06](components/q6_03.png)
 
 Caso a condição não seja seguida, a função é encerrada, o que significa que o vetor está invertido ou não é possível
 
 ### int main()
 Na main, primeiro definimos o vetor de números que iremos inverter com a nossa função criada e imprimimos com a função imprimir() ela para conferir como esta, e após comparar com a invertida.
 
-![Questão 06](components/q6_05.png)
+![Questão 06](components/q6_04.png)
 
 Após isso, chamamos a função inverter() para realizar o processo de inversão do vetor e imprimimos logo adiando para compararmos com o vetor anteriormente criado.
 
-![Questão 06](components/q6_06.png)
+![Questão 06](components/q6_05.png)
  
 ## Questão 07
 ### int main()
