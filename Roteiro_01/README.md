@@ -53,17 +53,44 @@ Para apresentar o tempo na qual o algoritmo precisou para executar o código foi
  - Alternativa b) Testar com as seguintes quantidades de sequências aleatórias: 
  - [x] 10³ ou 10^3
   
-  ![Questão 02](components/q2_b1.png)
+    ![Questão 02](components/q2_b1.png)
   
  - [x] 10⁶ ou 10^6 (apenas Média Iterativa)
 
- ![Questão 02](components/q2_b2.png)
+    ![Questão 02](components/q2_b2.png)
  
  - [ ] 10⁹ ou 10^9
 
- ![Questão 02](components/q2_b3.png)
+    ![Questão 02](components/q2_b3.png)
 
-- Alternativa c) **Média Iterativa:** Complexidade "O(n)". Pois quanto maior o tamanho (quantidade de elementos) maior o tempo de execução. **Média Recursiva:** Complexidade "N log(N)". 
+- Alternativa c) 
+
+    **Média Iterativa:** Complexidade "O(n)". Seguindo a lógica de quanto maior o tamanho (quantidade de elementos), maior o tempo de execução, assim, será um problema Linear. 
+    
+    Calculando a complexidade da Média Iterativa:
+
+    ![Questão 02](components/q2_c1.png)
+
+    Então **T(n) = 2n + 5**, assim o elemento mais relevante nessa equação é o N, então a complexidade desse código é de O(n).
+
+    **Média Recursiva:** Complexidade "O(n)". Pois, o tempo de execução de uma função recursiva sempre será dado pela relação de recorrência, ou seja, de acordo com a quantidade de chamadas da recursão.
+
+    Vendo que a chamada *mediaR(res, tam - 1* é a reprodução da recorrência, o custo total dela será igual a soma de cada passo (chamada recursiva). 
+
+    T(n) = T(n − 1) + 1
+    
+    > *T(n - 1)*, representa as chamadas da recursão;
+
+    > *+1*, representa a verificação do caso base(if);
+
+    ![Questão 02](components/q2_c2.png)
+
+    É possível observar com a resolução da função que o máximo de passos possível será de *n – 1*. Assim, podemos dizer que o cálculo sobre a complexidade será igual a ***(n−1) * 1 + 1***, ou seja, **O(n)** pois o elemento mais relevante será o n.
+
+    > *(n - 1)*, significa o número máximo de casos;
+
+    > **1*, significa a multiplicação final no custo total em todos os casos.
+
 
 Função que gera os números aleatórios para o cálculo da média.
 
