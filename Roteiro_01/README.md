@@ -49,8 +49,11 @@ Para apresentar o tempo na qual o algoritmo precisou para executar o código foi
 
 ## Questão 02
 
- - Alternativa a) Cálculo iterativo e recursivo da média;
- - Alternativa b) Testar com as seguintes quantidades de sequências aleatórias: 
+ - Alternativa a) 
+ Cálculo iterativo e recursivo da média;
+ 
+ - Alternativa b) 
+ Testar com as seguintes quantidades de sequências aleatórias: 
  - [x] 10³ ou 10^3
   
     ![Questão 02](components/q2_b1.png)
@@ -91,6 +94,7 @@ Para apresentar o tempo na qual o algoritmo precisou para executar o código foi
 
     > **1*, significa a multiplicação final no custo total em todos os casos.
 
+### float *gerador(size_t n)
 
 Função que gera os números aleatórios para o cálculo da média.
 
