@@ -54,6 +54,7 @@ Para apresentar o tempo na qual o algoritmo precisou para executar o código foi
 
  - Alternativa b) 
    - Testar com as seguintes quantidades de sequências aleatórias: 
+   
       - [x] 10³ ou 10^3
   
     ![Questão 02](components/q2_b1.png)
