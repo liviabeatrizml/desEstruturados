@@ -54,15 +54,15 @@ Para apresentar o tempo na qual o algoritmo precisou para executar o código foi
 
  - Alternativa b) 
    - Testar com as seguintes quantidades de sequências aleatórias: 
- - [x] 10³ ou 10^3
+      - [x] 10³ ou 10^3
   
     ![Questão 02](components/q2_b1.png)
   
- - [x] 10⁶ ou 10^6 (apenas Média Iterativa)
+      - [x] 10⁶ ou 10^6 (apenas Média Iterativa)
 
     ![Questão 02](components/q2_b2.png)
  
- - [ ] 10⁹ ou 10^9
+      - [ ] 10⁹ ou 10^9
 
     ![Questão 02](components/q2_b3.png)
 
