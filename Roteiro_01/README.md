@@ -53,9 +53,8 @@ Para apresentar o tempo na qual o algoritmo precisou para executar o código foi
    - Cálculo iterativo e recursivo da média;
 
  - Alternativa b) 
-   - Testar com as seguintes quantidades de sequências aleatórias: </br>
-
-   - [x] 10³ ou 10^3
+   - Testar com as seguintes quantidades de sequências aleatórias: 
+      - [x] 10³ ou 10^3
   
     ![Questão 02](components/q2_b1.png)
   
