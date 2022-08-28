@@ -53,18 +53,19 @@ Para apresentar o tempo na qual o algoritmo precisou para executar o código foi
    - Cálculo iterativo e recursivo da média;
 
  - Alternativa b) 
-   - Testar com as seguintes quantidades de sequências aleatórias: 
+   - Testar com as seguintes quantidades de sequências aleatórias:
+ 
       - [x] 10³ ou 10^3
   
-    ![Questão 02](components/q2_b1.png)
+         ![Questão 02](components/q2_b1.png)
   
       - [x] 10⁶ ou 10^6 (apenas Média Iterativa)
 
-    ![Questão 02](components/q2_b2.png)
+         ![Questão 02](components/q2_b2.png)
  
       - [ ] 10⁹ ou 10^9
 
-    ![Questão 02](components/q2_b3.png)
+         ![Questão 02](components/q2_b3.png)
 
 - Alternativa c) 
    - Qual a complexidade de cada algoritmo(médiaI e médiaR):
