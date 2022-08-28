@@ -50,10 +50,10 @@ Para apresentar o tempo na qual o algoritmo precisou para executar o código foi
 ## Questão 02
 
  - Alternativa a) 
- Cálculo iterativo e recursivo da média;
- 
+   - Cálculo iterativo e recursivo da média;
+
  - Alternativa b) 
- Testar com as seguintes quantidades de sequências aleatórias: 
+   - Testar com as seguintes quantidades de sequências aleatórias: 
  - [x] 10³ ou 10^3
   
     ![Questão 02](components/q2_b1.png)
@@ -67,6 +67,7 @@ Para apresentar o tempo na qual o algoritmo precisou para executar o código foi
     ![Questão 02](components/q2_b3.png)
 
 - Alternativa c) 
+   - Qual a complexidade de cada algoritmo(médiaI e médiaR):
 
     **Média Iterativa:** Complexidade "O(n)". Seguindo a lógica de quanto maior o tamanho (quantidade de elementos), maior o tempo de execução, assim, será um problema Linear. 
     
